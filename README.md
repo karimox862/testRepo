@@ -19,12 +19,12 @@ earthengine authenticate
 
 ## Running the example
 
-The script `compute_ndvi.py` demonstrates how to select a Landsat 8 image over a point of interest and compute NDVI. It prints image details and includes commented code showing how to export the result to Google Drive.
+The script `compute_ndvi.py` demonstrates how to select a Landsat 8 image over a point of interest and compute NDVI. It prints image details and can optionally export the result to Google Drive.
 
-Run the script with:
+Run the script with arguments specifying the location and date range:
 
 ```bash
-python compute_ndvi.py
+python compute_ndvi.py --lat 37.901 --lon -122.292 --start 2020-06-01 --end 2020-06-30
 ```
 
-Edit the script to customize the date range, location, or export settings as needed.
+Add `--export` to send the result to Google Drive.
